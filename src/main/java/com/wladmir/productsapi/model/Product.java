@@ -10,7 +10,8 @@ import javax.persistence.*;
 
 @Entity
 public class Product {
-    @Id @Schema(accessMode = Schema.AccessMode.READ_ONLY)
+    @Id
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "name", length = 55, nullable = false)
@@ -20,7 +21,8 @@ public class Product {
     @Column(name = "price", nullable = false)
     private Integer price;
 
-    @ManyToOne(cascade = CascadeType.DETACH) @Schema(accessMode = Schema.AccessMode.READ_ONLY)
+    @ManyToOne(cascade = CascadeType.DETACH)
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
 
     private Category category;
 

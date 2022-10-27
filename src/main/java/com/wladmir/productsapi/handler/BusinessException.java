@@ -2,7 +2,7 @@ package com.wladmir.productsapi.handler;
 
 import org.springframework.http.HttpStatus;
 
-public class BusinessException extends RuntimeException{
+public class BusinessException extends RuntimeException {
     private HttpStatus statusCode = HttpStatus.CONFLICT;
 
     public BusinessException(String mensagem, HttpStatus status) {
@@ -18,7 +18,7 @@ public class BusinessException extends RuntimeException{
         this.statusCode = statusCode;
     }
 
-    public BusinessException(String mensagem, Object ... params) {
+    public BusinessException(String mensagem, Object... params) {
         super(String.format(mensagem, params));
     }
 }

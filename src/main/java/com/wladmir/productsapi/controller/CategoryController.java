@@ -14,25 +14,29 @@ import org.springframework.web.bind.annotation.*;
 public class CategoryController {
     @Autowired
     CategoryService categoryService;
+
     @GetMapping
-    public ResponseEntity<Iterable<Category>> getCategories(){
+    public ResponseEntity<Iterable<Category>> getCategories() {
         return ResponseEntity.ok(categoryService.getCategories());
     }
+
     @GetMapping("/{id}")
-    public ResponseEntity<Category> getCategoryById(@PathVariable("id") Long id){
+    public ResponseEntity<Category> getCategoryById(@PathVariable("id") Long id) {
         return ResponseEntity.ok(categoryService.getCategoryById(id));
     }
 
     @PostMapping
-    public ResponseEntity<Category> createCategory(@RequestBody Category category){
+    public ResponseEntity<Category> createCategory(@RequestBody Category category) {
         return ResponseEntity.ok((categoryService.createCategory(category)));
     }
+
     @PutMapping("/{id}")
-    public ResponseEntity<Category> updateCategory(@PathVariable("id") Long id, @RequestBody Category category){
+    public ResponseEntity<Category> updateCategory(@PathVariable("id") Long id, @RequestBody Category category) {
         return ResponseEntity.ok(categoryService.updateCategory(id, category));
     }
+
     @DeleteMapping("/{id}")
-    public ResponseEntity<Category> deleteCategory(@PathVariable("id") Long id){
+    public ResponseEntity<Category> deleteCategory(@PathVariable("id") Long id) {
         return ResponseEntity.ok(categoryService.deleteCategory(id));
     }
 

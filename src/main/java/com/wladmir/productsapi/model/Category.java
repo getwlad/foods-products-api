@@ -7,7 +7,8 @@ import javax.persistence.*;
 @Entity
 public class Category {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) @Schema(accessMode = Schema.AccessMode.READ_ONLY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private Long id;
     @Column(name = "name", length = 55)
     private String name;
