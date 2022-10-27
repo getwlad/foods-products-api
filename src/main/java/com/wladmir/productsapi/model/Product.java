@@ -1,10 +1,7 @@
 package com.wladmir.productsapi.model;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import org.hibernate.annotations.Cascade;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
-import org.springframework.data.mapping.AccessOptions;
+
 
 import javax.persistence.*;
 

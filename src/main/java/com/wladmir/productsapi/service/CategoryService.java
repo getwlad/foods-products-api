@@ -2,7 +2,6 @@ package com.wladmir.productsapi.service;
 
 import com.wladmir.productsapi.handler.BusinessException;
 import com.wladmir.productsapi.model.Category;
-import com.wladmir.productsapi.model.Product;
 import com.wladmir.productsapi.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
