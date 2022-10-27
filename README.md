@@ -12,7 +12,8 @@ Um produto pode ser associado a uma categoria e uma categoria pode ser associada
 
 ## Instalação
 
-Utilize qualquer IDE compatível com a linguagem java e execute o projeto.
+Utilize qualquer IDE compatível com a linguagem java e execute o projeto. \
+Certifique-se de configurar os dados do banco de dados no arquivo application.properties
 
 ## Tecnologias e Recursos Utilizados
 
